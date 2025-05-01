@@ -1,0 +1,54 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1, h2 {
+  color: #1e88e5;
+  text-align: center;
+}
+
+canvas {
+  max-width: 100%;
+  margin: 40px auto;
+  display: block;
+}
+
+#doctorTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+#doctorTable th, #doctorTable td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+#doctorTable th {
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+#doctorTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#doctorTable tbody tr:hover {
+  background-color: #e3f2fd;
+}
