@@ -28,6 +28,20 @@ canvas {
   display: block;
 }
 
+#monthFilter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#monthFilter label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 #doctorTable {
   width: 100%;
   border-collapse: collapse;
@@ -52,3 +66,4 @@ canvas {
 #doctorTable tbody tr:hover {
   background-color: #e3f2fd;
 }
+
