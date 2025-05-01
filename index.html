@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rx Share Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Rx Share Dashboard</h1>
+    
+    <div id="monthFilter"></div>
+
+    <h2>National Rx Share</h2>
+    <canvas id="nationalChart" height="100"></canvas>
+
+    <h2>Rx Share by Prisma RSM</h2>
+    <canvas id="rsmChart" height="100"></canvas>
+
+    <h2>Doctor List</h2>
+    <table id="doctorTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Specialty</th>
+          <th>Chamber Address</th>
+          <th>Product</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
