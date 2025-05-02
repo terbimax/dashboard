@@ -1,67 +1,85 @@
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   color: #333;
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 h1, h2 {
-  color: #1e88e5;
-  text-align: center;
+  color: #2c3e50;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background: #e0e0e0;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+}
+
+.tab-button.active {
+  background: #2c3e50;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  margin-right: 15px;
 }
 
 canvas {
   max-width: 100%;
-  margin: 40px auto;
-  display: block;
-}
-
-#monthFilter {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
-
-#monthFilter label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  margin-bottom: 40px;
 }
 
 #doctorTable {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #doctorTable th, #doctorTable td {
   border: 1px solid #ccc;
-  padding: 12px;
+  padding: 10px;
   text-align: left;
 }
 
 #doctorTable th {
-  background-color: #1e88e5;
-  color: #fff;
+  background-color: #f0f0f0;
+  font-weight: bold;
 }
 
-#doctorTable tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+#doctorTable tr:nth-child(even) {
+  background-color: #fafafa;
 }
 
-#doctorTable tbody tr:hover {
-  background-color: #e3f2fd;
+#doctorTable tr:hover {
+  background-color: #f1f1f1;
 }
