@@ -10,27 +10,49 @@
 <body>
   <div class="container">
     <h1>Rx Share Dashboard</h1>
-    
-    <div id="monthFilter"></div>
 
-    <h2>National Rx Share</h2>
-    <canvas id="nationalChart" height="100"></canvas>
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-button active" data-tab="national">National Rx Share</button>
+      <button class="tab-button" data-tab="doctor">Doctor-wise Rx Share</button>
+    </div>
 
-    <h2>Rx Share by Prisma RSM</h2>
-    <canvas id="rsmChart" height="100"></canvas>
+    <!-- Generic Filter -->
+    <div class="filter-group" id="genericFilter"></div>
 
-    <h2>Doctor List</h2>
-    <table id="doctorTable">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Specialty</th>
-          <th>Chamber Address</th>
-          <th>Product</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <!-- National Share Tabs -->
+    <div class="tab-content active" id="national">
+      <h2>Generic-wise National Rx Share</h2>
+      <canvas id="genericChart"></canvas>
+
+      <h2>Prisma RSM-wise Rx Share</h2>
+      <canvas id="rsmChart"></canvas>
+
+      <h2>Prisma DSM-wise Rx Share</h2>
+      <canvas id="dsmChart"></canvas>
+    </div>
+
+    <!-- Doctor-wise Rx Share -->
+    <div class="tab-content" id="doctor">
+      <h2>Doctor-wise Rx Share</h2>
+      <table id="doctorTable">
+        <thead>
+          <tr>
+            <th>Dr. Name</th>
+            <th>Degree</th>
+            <th>Specialty</th>
+            <th>Chamber Address</th>
+            <th>District</th>
+            <th>Thana</th>
+            <th>Total Rx</th>
+            <th>Renata Rx</th>
+            <th>Rx Share (%)</th>
+            <th>Prisma PSO Code</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </div>
 
   <script src="script.js"></script>
